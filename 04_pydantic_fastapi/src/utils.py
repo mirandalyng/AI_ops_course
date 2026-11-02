@@ -5,7 +5,7 @@ DATA_PATH = Path(__file__).parent / "data"
 
 
 def query_duckdb(sql_code: str, parameters=None):
-    with duckdb.connect(DATA_PATH/"movies.duchdb") as conn:
+    with duckdb.connect(DATA_PATH/"movies.duckdb") as conn:
         # parameters to avoid sql injections
         cursor = conn.execute(sql_code, parameters=parameters)
 
