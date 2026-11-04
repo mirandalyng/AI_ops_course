@@ -8,7 +8,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-def changeModel(model_name):
+def setup_model(model_name):
 
     return OpenAIChatModel(
         # this is found in nvida - choose model and copy model
