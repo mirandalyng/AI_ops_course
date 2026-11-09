@@ -3,6 +3,8 @@ import duckdb
 
 DATA_PATH = Path(__file__).parent / "data"
 
+DATA_PATH.mkdir(exist_ok=True)
+
 
 def query_duckdb(sql_code: str, parameters=None):
     with duckdb.connect(DATA_PATH/"movies.duckdb") as conn:
@@ -13,5 +15,5 @@ def query_duckdb(sql_code: str, parameters=None):
         # if its starts with select, from , desc , pragna
         # return df
         # else none
-        if sql_code.strip().lower().startswith(("select", "from", "desc", "pragna")):
+        if sql_code.strip().casefold().startswith(("select", "from", "desc", "pragna")):
             return cursor.df()

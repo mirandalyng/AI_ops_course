@@ -13,3 +13,9 @@
 - När vi postar är det en prompt
 
 ![](images/architecture.png)
+
+# Tops för att jobba
+
+- Börja med endpoints för API
+- jobba bakåt mot BaseModels (Pydancic models )
+- för att sedan bygga upp strukturen för lagreing i databasen
