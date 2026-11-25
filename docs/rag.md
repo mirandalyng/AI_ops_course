@@ -1,5 +1,5 @@
 # Rag Application with PydanticAI, fastAPI and Streamlit
 
-## Building
+## Infrastructure (from video)
 
-!()[images/rag.png]
+![](images/rag.png)
